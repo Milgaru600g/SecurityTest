@@ -9,15 +9,15 @@
         <h1>Hello, world!</h1>
         <?php
             if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_name'])) {
-                echo "<p>·Î±×ÀÎÀ» ÇØ ÁÖ¼¼¿ä. <a href=\"login.php\">[·Î±×ÀÎ]</a></p>";
+                echo "<p>ë¡œê·¸ì¸ì„ í•´ ì£¼ì„¸ìš”. <a href=\"login.php\">[ë¡œê·¸ì¸]</a></p>";
             } else {
                 $user_id = $_SESSION['user_id'];
                 $user_name = $_SESSION['user_name'];
-                echo "<p><strong>$user_name</strong>($user_id)´Ô È¯¿µÇÕ´Ï´Ù.";
-                echo "<a href=\"logout.php\">[·Î±×¾Æ¿ô]</a></p>";
+                echo "<p><strong>$user_name</strong>($user_id)ë‹˜ í™˜ì˜í•©ë‹ˆë‹¤.";
+                echo "<a href=\"logout.php\">[ë¡œê·¸ì•„ì›ƒ]</a></p>";
             }
         ?>
         <hr />
-        <p>Åõ¸íÇÑ À¯¸®±¸½½Ã³·³ º¸ÀÌÁö¸¸ ±×·¸°Ô ½±°Ô ±úÁöÁø ¾ÊÀ» °Å¾ß</p>
+        <p>íˆ¬ëª…í•œ ìœ ë¦¬êµ¬ìŠ¬ì²˜ëŸ¼ ë³´ì´ì§€ë§Œ ê·¸ë ‡ê²Œ ì‰½ê²Œ ê¹¨ì§€ì§„ ì•Šì„ ê±°ì•¼</p>
     </body>
 </html>
